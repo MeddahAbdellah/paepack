@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+  <!--  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+  -->  <title></title>
+    <!-- Bootstrap Core CSS -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/index.css">
+   <!-- //lined-icons -->
+  </head>
+  <body >
+    <div class="equipementloginWrapper">
+      <div class="login">
+        <h1>Equipement Code</h1>
+        <div class="equipementpassword">
+          <input type="text" name="equipementlogin">
+          <button type="button" name="equipementlogin">Save</button>
+        </div>
+      </div>
+    </div>
+<div class="loginWrapper">
+  <div class="login">
+    <div class="steps">
+      Step 1: Login <i class="fas fa-play"></i> Step 2: Select Product <i class="fas fa-play"></i> Step 3: Run Product
+    </div>
+    <div class="keypad">
+      <div class="keyRow">
+        <button type="button" name="userbutton">1</button>
+        <button type="button" name="userbutton">2</button>
+        <button type="button" name="userbutton">3</button>
+      </div>
+      <div class="keyRow">
+        <button type="button" name="userbutton">4</button>
+        <button type="button" name="userbutton">5</button>
+        <button type="button" name="userbutton">6</button>
+      </div>
+      <div class="keyRow">
+        <button type="button" name="userbutton">7</button>
+        <button type="button" name="userbutton">8</button>
+        <button type="button" name="userbutton">9</button>
+      </div>
+      <div class="password">
+        <input type="number" name="password">
+        <button type="button" name="login">Login</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="productSelectionWrapper">
+  <div class="selectProduct">
+    <div class="steps">
+      Step 1: Login <i class="fas fa-play"></i> Step 2: Select Product <i class="fas fa-play"></i> Step 3: Run Product
+    </div>
+    <select name="products">
+      <option value="Waldorf Salad">Waldorf Salad</option>
+    </select>
+    <input type="number" name="po" placeholder="PO#*">
+    <input type="date" name="code_date" placeholder="Code Date*">
+    <button type="button" name="selectProduct">Enter</button>
+  </div>
+</div>
+<div class="productPanelWrapper">
+  <div class="productPanel">
+    <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+
+    <div class="indicators">
+      <div class="productDetails">
+        <h3 id="product_name">Waldorf SALAD</h3>
+        <h2 id="operating_mode">MODE <span>PASSIVE</span></h2>
+        <p id="operator"> Miguel </p>
+        <p id="code_date"> 10/29/2018 </p>
+        <p id="upc"> 850195003023 </p>
+        <p id="po"> 821887 </p>
+        <div class="detailsButtons">
+          <button type="button" name="audit">Audit</button>
+          <button type="button" name="passive">Passive</button>
+        </div>
+      </div>
+
+      <div class="measurements">
+        <div class="indicator">
+          <h5 id="dashWeight" >8.65</h5>
+          <h6>Lbs</h6>
+        </div>
+        <h5 id="dashTemperature">23°</h5>
+        <progress value="23" max="100"></progress>
+      </div>
+      <div class="indicator">
+        <h6>LSL</h6>
+        <h5 id="LSL">8.6</h5>
+        <h6>lbs</h6>
+      </div>
+      <div class="indicator">
+        <h6>USL</h6>
+        <h5 id="USL">8.8</h5>
+        <h6>lbs</h6>
+      </div>
+    </div>
+
+    <div class="table">
+
+      <table>
+        <tr>
+          <th>Sample#</th>
+          <th>Date</th>
+          <th>Case Weight</th>
+          <th>Measured Weight</th>
+          <th>Temperature</th>
+          <th>Status</th>
+        </tr>
+
+      </table>
+
+    </div>
+  </div>
+</div>
+<div class="menuWrapper">
+  <div class="calibrationPanel">
+    <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+    <h4 id="dashboard">Dashboard</h4>
+    <h4 id="sensorsRoute">Sensors Mesurements</h4>
+    <h4 id="relayRoute">Relay Control</h4>
+    <h4 id="motorRoute">Motor Control</h4>
+    <h4 id="weightRoute">Weight Sensor Calibration</h4>
+    <h4 id="settingsRoute">Settings</h4>
+    <h4 id="disconnect">Disconnect</h4>
+  </div>
+</div>
+
+
+<div class="relayPanelWrapper">
+
+      <div class="calibrationPanel">
+      <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+        <div class="panelDescriptor">
+          <h4>CALIBRATION <span>MODE</span></h4>
+          <h1><i class="fas fa-bell"></i></h1>
+        </div>
+        <div class="validation">
+          <button type="button" name="save">Save</button>
+          <button type="button" name="test">Test</button>
+          <button type="button" name="cancel">Cancel</button>
+        </div>
+        <div class="controls">
+            <div class="controller">
+              <div class="checkBox"><i class="fas fa-calendar-check"></i></div>
+              <input type="number" name="runtime" placeholder="Run Time">
+              <input type="text" name="description" placeholder="Description">
+              <select class="relaySelect" name="relaySelect">
+                <option value="0">Temperature</option>
+                <option value="1">Weight</option>
+              </select>
+              <input type="number" name="min" placeholder="Min">
+              <input type="number" name="max" placeholder="Max">
+              <div class="relay"><i class="fas fa-microchip"></i>1</div>
+            </div>
+            <div class="controller">
+              <div class="checkBox"><i class="fas fa-calendar-check"></i></div>
+              <input type="number" name="runtime" placeholder="Run Time">
+              <input type="text" name="description" placeholder="Description">
+              <select class="relaySelect" name="relaySelect">
+                <option value="0">Temperature</option>
+                <option value="1">Weight</option>
+              </select>
+              <input type="number" name="min" placeholder="Min">
+              <input type="number" name="max" placeholder="Max">
+              <div class="relay"><i class="fas fa-microchip"></i>2</div>
+            </div>
+            <div class="controller">
+              <div class="checkBox"><i class="fas fa-calendar-check"></i></div>
+              <input type="number" name="runtime" placeholder="Run Time">
+              <input type="text" name="description" placeholder="Description">
+              <select class="relaySelect" name="relaySelect">
+                <option value="0">Temperature</option>
+                <option value="1">Weight</option>
+              </select>
+              <input type="number" name="min" placeholder="Min">
+              <input type="number" name="max" placeholder="Max">
+              <div class="relay"><i class="fas fa-microchip"></i>3</div>
+            </div>
+        </div>
+      </div>
+
+</div>
+
+<div class="motorPanelWrapper">
+
+      <div class="calibrationPanel">
+      <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+        <div class="panelDescriptor">
+          <h4>CALIBRATION <span>MODE</span></h4>
+          <canvas data-type="radial-gauge"
+                  data-width="200"
+                  data-height="200"
+                  data-units="m/s"
+                  data-value="37.5"></canvas>
+        </div>
+        <div class="validation">
+          <button type="button" name="save">Save</button>
+          <button type="button" name="cancel">Cancel</button>
+        </div>
+        <div class="controls">
+          <div class="controller weightController">
+            <div class="weight"><i class="fas fa-tachometer-alt"></i></div>
+            <input type="range" min="1" max="100" value="50" class="slider" name="speedRange">
+            <input type="number" name="speedRange" value="">
+            <button type="button" name="setSpeed">Set Speed</button>
+          </div>
+        </div>
+
+      </div>
+
+</div>
+
+
+<div class="weightPanelWrapper">
+
+
+      <div class="calibrationPanel">
+      <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+        <div class="panelDescriptor">
+          <h4>CALIBRATION <span>MODE</span></h4>
+          <h1><i class="fas fa-weight"></i></h1>
+        </div>
+        <div class="validation">
+          <button type="button" name="save">Save</button>
+          <button type="button" name="cancel">Cancel</button>
+        </div>
+        <div class="controls">
+          <h6>Process : make sure there is no weight on the weighing balance then press the Set Zero button , wait for the app to ask you put a known weight.
+              When you do, insert the weight value in the input then press the Calibrate button.
+          </h6>
+          <div class="controller weightController">
+            <div class="weight"><i class="fas fa-weight-hanging"></i></div>
+            <input type="number" name="actualWeight" placeholder="Actual Weight">
+            <button type="button" name="setZero">Set Zero</button>
+            <button type="button" name="calibrate">Calibrate</button>
+          </div>
+        </div>
+      </div>
+
+</div>
+<div class="sensorsPanelWrapper">
+    <div class="calibrationPanel">
+    <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+    <div class="panelDescriptor">
+        <h1>Reading Sensors</h1>
+    </div>
+    <div class="sensors">
+      <div class="sensor">
+        <h1 id="temperature">23<i class="fas fa-thermometer-three-quarters"></i></h1>
+      </div>
+      <div class="sensor">
+        <h1 id="weight">7<i class="fas fa-weight-hanging"></i></h1>
+      </div>
+    </div>
+</div>
+</div>
+
+<div class="settingsWrapper">
+  <div class="calibrationPanel">
+    <div class="header"> <div class="landscape"><img src="./css/Capture.JPG" alt="Couldn't load" ></div>  <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+    <div class="setting"> <h4>measure</h4> <select name=""> <option value="sae">SAE</option> <option value="metric">Metric</option> </select> </div>
+    <div class="setting"> <h4>language</h4> <select name=""> <option value="en">English</option> <option value="fr">French</option>  <option value="ar">Arabic</option> </select> </div>
+  </div>
+</div>
+
+
+        <script src="cordova.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="./js/image-compressor.min.js"></script>
+        <script src="./js/BLE.js"></script>
+        <script src="./js/pagesEffects.js"></script>
+        <script src="https://cdn.rawgit.com/Mikhus/canvas-gauges/gh-pages/download/2.1.5/all/gauge.min.js"></script>
+        <script src="./js/routing.js"></script>
+        <script src="./js/login.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.dev.js"></script>
+        <script src="./js/audit.js"></script>
+        <script src="./js/index.js"></script>
+
+  </body>
+</html>

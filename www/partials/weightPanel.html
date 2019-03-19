@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/index.css">
+   <!-- //lined-icons -->
+  </head>
+  <body >
+    <div class="weightPanelWrapper">
+
+
+          <div class="calibrationPanel">
+          <div class="header"> <img src="./css/Capture.JPG" alt="Couldn't load" class=".landscape"> <i class="fas fa-bars"></i> <i class="fas fa-user-circle"></i></div>
+            <div class="panelDescriptor">
+              <h4>CALIBRATION <span>MODE</span></h4>
+              <h1><i class="fas fa-weight"></i></h1>
+            </div>
+            <div class="validation">
+              <button type="button" name="save">Save</button>
+              <button type="button" name="cancel">Cancel</button>
+            </div>
+            <div class="controls">
+              <h6>Process : make sure there is no weight on the weighing balance then press the Set Zero button , wait for the app to ask you put a known weight.
+                  When you do insert the weight value in the input then press the Calibrate button.
+              </h6>
+              <div class="controller weightController">
+                <div class="weight"><i class="fas fa-weight-hanging"></i></div>
+                <input type="number" name="actualWeight" placeholder="Actual Weight">
+                <button type="button" name="setZero">Set Zero</button>
+                <button type="button" name="calibrate">Calibrate</button>
+              </div>
+            </div>
+
+          </div>
+
+    </div>
+
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/jquery.nicescroll.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/index.js"></script>
+
+  </body>
+</html>

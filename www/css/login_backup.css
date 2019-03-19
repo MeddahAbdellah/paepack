@@ -1,0 +1,139 @@
+.login,.subscribe{
+  background: #5E35B1;
+  position: relative;
+  display:flex;
+  top: 0;
+  left: 0;
+  flex-flow: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.loginHeader ,.subscribeHeader{
+  margin-left:20px;
+  margin-top:20px;
+  display: flex;
+  flex-flow: column;
+  align-self: flex-start;
+  align-items: center;
+}
+
+.login h1,.subscribe h1{
+  padding-top: 0;
+  margin-top: 0;
+  color: white;
+  font-family: helvetica;
+  font-size: 4em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.login h6,.subscribe h6{
+  color: #FAFAFA;
+  font-weight: lighter;
+  padding-top:0;
+  margin-top: 0;
+  margin-right: 30px;
+  font-family: helvetica;
+}
+.login .loginHeader h1 span ,.subscribe .subscribeHeader h1 span{
+  position: relative;
+  font-size: 0.2em;
+  margin: 0;
+  padding: 0;
+  top:-50px;
+  left: -20px;
+
+}
+.login form,.subscribe form{
+  min-width: 30vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.login form h1,.subscribe form h1{
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+.subscribe form h1{
+    font-size: 4em;
+}
+.login form h1 span,.subscribe form h1 span{
+  position: relative;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0;
+  top:-30px;
+  left: -20px;
+  color: #FF5722 ;
+
+}
+.subscribe form h3{
+  color:#5E35B1;
+  background: white;
+  position: relative;
+  font-family: helvetica;
+  z-index: 15;
+  padding: 5px;
+}
+.subscribe form h3 .sidebar{
+  position: absolute;
+  height: 420px;
+  background: white;
+  width: 25px;
+  margin-top: -5px;
+  margin-left: -25px;
+}
+.login form input,.subscribe form input{
+  border: 1px solid white;
+  font-size: 1em;
+  margin: 15px;
+  background: #5E35B1;
+  color: white;
+  width: 70%;
+  padding: 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+}
+.greyPlaceHolder::-webkit-input-placeholder{
+  color: grey;
+}
+.whitePlaceHolder::-webkit-input-placeholder{
+  color: white;
+}
+
+.login form button ,.subscribe form button{
+  color: white;
+  width: 30%;
+  padding: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1em;
+  background: #5E35B1;
+  font-family: helvetica;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin: 5px;
+  transition: 0.5s;
+}
+.login form button:hover,.subscribe form button:hover{
+  background: white;
+  color: #5E35B1;
+}
+
+.login .forgotOptions,.subscribe .registerOptions{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  color: white;
+  width: 80%;
+}
+.login .forgotOptions button,.subscribe .registerOptions button{
+  background: none;
+  border: none;
+}
