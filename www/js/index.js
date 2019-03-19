@@ -60,6 +60,6 @@ function lunchApp(){
     },2000);
   });
   $("#setSpeed").on("click",function(){
-    writeSerial("m,"+$("motorSpeed").val());
+    writeSerial("m,"+$("#motorSpeed").val());
   })
 }
