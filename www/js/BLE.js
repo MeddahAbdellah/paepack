@@ -1,4 +1,4 @@
-var serverUrl=" https://7881c529.ngrok.io";
+var serverUrl=" https://www.pacificalliedengineering.com/PAEPACK_CLIENTS";
 var service_uuid="75cf7374-a137-47e7-95e5-e675189c8a3e";
 var characteristic_uuid="0d563a58-196a-48ce-ace2-dfec78acc814";
 //localStorage.setItem("equipement_id","9F86D081884C7D659A2FEAA0C55AD015A3BF4F1B2B0B822CD15D6C15B0F00A08");
@@ -28,6 +28,7 @@ function startBLE() {
 function collectDataWhenConnected(BleDevice){
   console.log(BleDevice);
   console.log(bytesToString(BleDevice.advertising));
+  //ble.startNotification(connectedDevice.id, service_uuid,characteristic_uuid,function(dataRead){readBLEsuccess(dataRead)},readBLEfail(connectedDevice));
        dataReader = setInterval(readBLE,2000);
 
 }
@@ -49,7 +50,6 @@ function readBLEsuccess(dataRead){
 
 function readBLEfail(BleDevice){
   console.log("reconnectin ... ");
-
   ble.isConnected(BleDevice.id,function(){console.log("connected");
 },function(){console.log("not connected");clearInterval(dataReader);});
 }

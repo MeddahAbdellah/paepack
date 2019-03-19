@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
+    <title></title>
+    <!-- Bootstrap Core CSS -->
+   <link href="./css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+   <!-- Graph CSS -->
+   <link href="./css/font-awesome.css" rel="stylesheet">
+   <!-- jQuery -->
+   <!-- lined-icons -->
+   <link rel="stylesheet" href="./css/icon-font.min.css" type='text/css' />
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/index.css">
+   <!-- //lined-icons -->
+  </head>
+  <body>
+        <!--Home page start-->
+        <div class="homePage">
+          <h1>BLE APPLICATION <i class="fas fa-heartbeat"></i></h1>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="userName" placeholder="userName">
+            <button type="button" name="submit">Login</button>
+          </form>
+        </div>
+        <!--Home page end-->
+        <!--search for ble page start-->
+        <div class="BLE_search">
+          <div class="BLE_search_header">
+            <h1>SEARCH FOR BLE</h1>
+          </div>
+        </div>
+        <!--search for ble page end-->
+        <!--display ble services page start-->
+        <div class="BLE_services">
+          <div class="BLE_search_header">
+            <h1>SERVICES</h1>
+          </div>
+        </div>
+        <!--display ble services page end-->
+        <!--display ble data page start-->
+        <div class="BLE_data">
+          <div class="BLE_search_header">
+            <h1>DATA</h1>
+          </div>
+          <div class="data_display">
+            <div class="data_show">
+              <h2>149</h2><h2><i class="fas fa-heartbeat"></i></h2>
+            </div>
+            <button type="button" name="send">Send <i class="fas fa-cloud-upload-alt"></i></button>
+            <button type="button" name="download">download <i class="fas fa-cloud-download-alt"></i></button>
+          </div>
+        </div>
+        <!--display ble data page end-->
+        <!--download data page start-->
+        <div class="BLE_download">
+          <div class="BLE_search_header">
+            <h1>DOWNLOAD</h1>
+          </div>
+          <button type="button" name="button">Download</button>
+        </div>
+        <!--download data page end-->
+
+        <script src="cordova.js"></script>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script defer src="./js/index.js"></script>
+  </body>
+</html>

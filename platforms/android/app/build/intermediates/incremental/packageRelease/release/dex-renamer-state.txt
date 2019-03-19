@@ -1,0 +1,4 @@
+#Mon Jul 30 15:55:09 WAT 2018
+base.0=D\:\\CordovaApp\\BLE\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+renamed.0=classes.dex
+file.0=D\:\\CordovaApp\\BLE\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0\\classes.dex

@@ -1,4 +1,4 @@
-var pinNumbers=[4,2];
+var pinNumbers=[15,2];
 
 document.addEventListener("deviceready", onDeviceReady, false);
 hideAll();
@@ -55,8 +55,11 @@ function lunchApp(){
     var calibrationTimeout=setTimeout(function(){
       alert("Put on the real weight and set that value in the input field");
       $("button[name='calibrate']").one("click",function(){
-        writeSerial((parseFloat($("input[name='actualWeight']").val())*1000).toFixed(4));
+        writeSerial((parseFloat($("input[name='actualWeight']").val())*parseFloat(localStorage.getItem("weight_unit_transforme")).toFixed(4)*1000));
       });
     },2000);
   });
+  $("#setSpeed").on("click",function(){
+    writeSerial("m,"+$("motorSpeed").val());
+  })
 }

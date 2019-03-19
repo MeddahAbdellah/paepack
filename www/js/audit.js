@@ -1,6 +1,6 @@
 startListening();
 function startListening(){
-  var socket = io("https://32e40b83.ngrok.io");
+  var socket = io("https://paepack-ihezlfihqc.now.sh/");
   socket.emit('room', {room_name : 'equipement'});
   socket.on("startAudit",function(data){
 
@@ -17,7 +17,7 @@ function lunchAudit(audit_size){
   var now= new Date().toJSON().slice(0, 19).replace('T', ' ');
   $.ajax({
     type:"POST",
-    url:serverUrl+"/PAEPACK/createAudit.php",
+    url:serverUrl+"/createAudit.php",
     data:{user_id:localStorage.getItem("user_id"),
           equipement_id:localStorage.getItem("equipement_id"),
           audit_date:now,

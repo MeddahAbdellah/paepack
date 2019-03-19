@@ -1,0 +1,217 @@
+body{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+/* Home page start*/
+.homePage{
+ width: 100vw;
+ height: 100vh;
+ position: absolute;
+ display: flex;
+ justify-content:center;
+ align-items: center;
+ flex-flow: column;
+ color: white;
+ font-family: helvetica;
+ font-weight: bold;
+ background: #3498DB;
+ transition: 0.5s;
+ left: 0;
+}
+
+.homePage form{
+  width: 70%;
+}
+.homePage h1{
+  position: absolute;
+  top: 50px;
+  font-weight:bolder;
+  text-align: center;
+  cursor: pointer;
+  transition: 2s;
+}
+.homePage h1:hover{
+  color: #E91E63;
+}
+.homePage button{
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  background: #EF5350;
+  color: white;
+  padding: 5px;
+  font-size: 1.5em;
+  border-radius: 1px;
+  transition: 0.5s;
+}
+.homePage button:hover{
+  background: #F44336;
+}
+.homePage input{
+  width: 100%;
+  border: none;
+  color:  #3498DB;
+  border-radius: 1px;
+  font-size: 1.2em;
+  padding: 10px;
+  text-align: center;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #AED6F1;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #AED6F1  ;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #AED6F1;
+}
+
+/* Home page end*/
+.BLE_services,.BLE_search{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  color: black;
+  font-family: helvetica;
+  font-weight: bold;
+  background: white;
+  transition: 0.5s;
+  left: 0;
+  top: 0;
+  z-index: -999;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.BLE_search_header{
+  color: white;
+  background: #3498DB;
+}
+.BLE_search_header h1{
+  font-weight:bolder;
+  text-align: center;
+  cursor: pointer;
+  background: #3498DB;
+  padding: 20px;
+  margin: 0;
+  transition: 2s;
+}
+.data_display h2:hover,.BLE_search_header h1:hover{
+  color: #E91E63;
+}
+
+.BLE_service,.BLE_device{
+display: flex;
+flex-flow: row;
+width: 100%;
+justify-content: space-between;
+padding: 30px;
+-webkit-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 2px 1px rgba(0,0,0,0.75);
+font-size: 1.3em;
+}
+
+.BLE_service button,.BLE_device button{
+  border: none;
+  padding: 6px;
+  outline-color: #424242;
+  border-radius: 3px;
+
+  background: #212121;
+  font-weight: normal;
+  color: #F5F5F5;
+  transition: 0.5s;
+}
+.BLE_service button:hover,.BLE_device button:hover{
+  color: #4DD0E1;
+}
+.BLE_services{
+  z-index: -1999;
+}
+.BLE_data{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  color: black;
+  font-family: helvetica;
+  font-weight: bold;
+  background: #3498DB;
+  transition: 0.5s;
+  left: 0;
+  top: 0;
+  z-index: -2999;
+  overflow: auto;
+  overflow-x: hidden;
+}
+.data_display{
+  width: 100vw;
+  height: 80vh;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.data_display h2,.data_show i{
+    font-size: 5em;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.data_show{
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  align-items: center;
+}
+.data_show i{
+  font-size: 1em;
+  transition: none;
+}
+.BLE_download a{
+  width: 100%;
+  text-align: center;
+}
+.BLE_download button,.data_display button{
+  margin: 10px;
+  padding: 10px;
+  padding-right:20px ;
+  padding-left: 20px;
+  width: 50%;
+  background: white;
+  color: #34495E;
+  font-family: helvetica;
+  font-size: 1.3em;
+  outline-color: #455A64;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align:center;
+}
+.data_display button:focus {
+  background: #E74C3C;
+}
+.BLE_download{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content:center;
+  font-family: helvetica;
+  font-weight: bold;
+  background: #3498DB;
+  position: absolute;
+  top: 0;
+  left:0;
+  z-index: -3999;
+}
+.BLE_download button:hover{
+  background: #F44336;
+}
