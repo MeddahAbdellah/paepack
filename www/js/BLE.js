@@ -1,4 +1,4 @@
-var serverUrl=" https://www.192.168.1.17/bfp_clients";
+var serverUrl=" https://www.bfp.com/bfp_clients";
 var service_uuid="75cf7374-a137-47e7-95e5-e675189c8a3e";
 var characteristic_uuid="0d563a58-196a-48ce-ace2-dfec78acc814";
 //localStorage.setItem("equipement_id","9F86D081884C7D659A2FEAA0C55AD015A3BF4F1B2B0B822CD15D6C15B0F00A08");
